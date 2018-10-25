@@ -39,6 +39,7 @@ func testGeneration(t *testing.T, sequence []int, expectedResults []string) {
 		t.Errorf("Print must process request without any errors, but: %s", err)
 	}
 
+	// it's easy to check slice of string
 	realResults := make([]string, 0, len(expectedResults))
 	for set := range resultsChan {
 		realResults = append(realResults, fmt.Sprint(set))

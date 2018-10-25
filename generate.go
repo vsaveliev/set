@@ -5,11 +5,11 @@ import (
 	"sync"
 )
 
-// Generate returns channel with generated sets from sequence
+// Generate returns channel with generated sets from the sequence
 func Generate(sequence ...int) (<-chan []int, error) {
 	err := validateSequence(sequence)
 	if err != nil {
-		return nil, fmt.Errorf("Cannot generate and print sets: %s", err)
+		return nil, fmt.Errorf("Cannot generate sets: %s", err)
 	}
 
 	results := make(chan []int)
@@ -33,6 +33,7 @@ func Generate(sequence ...int) (<-chan []int, error) {
 	return results, nil
 }
 
+// generateReq generates sets and puts them in results channel reqursively
 func generateReq(sequence, set []int, results chan<- []int, wg *sync.WaitGroup) {
 	defer wg.Done()
 
