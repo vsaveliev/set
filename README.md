@@ -1,6 +1,6 @@
 # Set
 
-Sets generation from numbers sequence. The user can provide some numbers and the package should print (or just generate) sets from these numbers. Size of the sets is defined by size of the sequence. 0 < m < N, where m is number from set, N is number from the sequence with the same index. The sets can be ordered randomly. For example,
+Sets generation from numbers sequence. The user can provide some numbers and the package should print (or just generate) sets from these numbers. Size of the sets is defined by size of the sequence. 0 < m < N, where m is the number from a set, N is the number from the sequence with the same index. The sets can be ordered randomly. For example,
 
 ```
 Input: 1, 2

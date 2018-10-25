@@ -12,7 +12,7 @@ func ExamplePrint() {
 	w := os.Stdout
 	err := set.Print(w, 1, 1)
 	if err != nil {
-		fmt.Println("Cannot print:", err)
+		fmt.Println("Cannot print sets:", err)
 	}
 	// Output:
 	// [0 0]
@@ -22,7 +22,7 @@ func ExamplePrint() {
 func ExampleGenerate() {
 	results, err := set.Generate(1, 1)
 	if err != nil {
-		fmt.Println("Cannot print:", err)
+		fmt.Println("Cannot generate sets:", err)
 	}
 
 	for result := range results {
