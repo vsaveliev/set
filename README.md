@@ -15,7 +15,13 @@ This is simple realisation of the task. We generate sets from the input numbers 
 To run tests (with logs):
 
 ```go
-go test -race -bench=. -v
+go test -bench=. -v
+```
+
+OR without benchmarks (with logs):
+
+```go
+go test -race -v
 ```
 
 This package has tests:
